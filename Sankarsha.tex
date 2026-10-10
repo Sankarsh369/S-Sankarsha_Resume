@@ -1,0 +1,100 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist{nosep,leftmargin=*}
+
+% Section headings: bold, with a rule underneath
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-0.6ex}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+
+% Project / entry headings: bold title on the left, link on the right
+\newcommand{\projecthead}[2]{%
+  \noindent\textbf{#1}\hfill#2\par\vspace{1pt}}
+
+\begin{document}
+
+% ---------- Header ----------
+\noindent
+\begin{tabularx}{\linewidth}{@{}X c X@{}}
+  \small \href{https://github.com/Sankarsh369}{GitHub: Sankarsh369} &
+  {\LARGE S Sankarsha} &
+  \small \hfill +91 9014936902 \\
+\end{tabularx}
+\begin{center}
+\small \href{https://www.linkedin.com/in/Sankarsha}{LinkedIn: @Sankarsha} \quad|\quad
+\href{mailto:sankarshsreekulam@gmail.com}{sankarshsreekulam@gmail.com}
+\end{center}
+
+% ---------- Summary ----------
+\section{Summary}
+Motivated B.Tech AI \& ML student at VIT Bhopal with a strong passion for data science, machine learning and
+LLM applications. Built AI projects in Python, including an LLM context compression engine and a prompt-injection
+security gateway. Seeking an internship to apply and grow my data science and AI/ML skills.
+
+% ---------- Skills ----------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}l X@{}}
+  Programming Languages: & C++, Python \\[2pt]
+  Data Science \& ML Libraries: & NumPy, Pandas, Scikit-learn (learning actively), Data Preprocessing, Exploratory Data Analysis (EDA), Feature Engineering \\[2pt]
+  Machine Learning \& AI: & Supervised \& Unsupervised Learning, Classification, Regression, Clustering, Model Evaluation, Natural Language Processing (NLP), Large Language Models (LLMs), Prompt Engineering, Generative AI \\[2pt]
+  Web Development: & HTML, CSS \\[2pt]
+  Tools and Platforms: & Power BI, Jupyter Notebook, Canva, Figma \\[2pt]
+  Soft Skills: & Quick Learner, Problem Solver, Team Collaborator \\
+\end{tabularx}
+
+% ---------- Projects ----------
+\section{Projects}
+\projecthead{Nucleus -- LLM Context Compression Engine}{\small\href{https://github.com/Sankarsh369}{GitHub}}
+Built a low-resource context compression engine that shrinks LLM prompts by over 70\% (76.3\% on benchmark
+code) while retaining 95\%+ QA accuracy, giving a 1.85x latency speedup and lower inference cost. Implemented
+semantic deduplication, token-budget chunking, PII scrubbing and conversation-history compression behind a
+FastAPI service with SQLite persistence, API authentication, Docker and CI (InnovaHack Round 2).
+
+\vspace{5pt}
+\projecthead{LLM Firewall \& Prompt Injection Shield}{\small\href{https://github.com/Sankarsh369}{GitHub}}
+Developed a production-ready micro-SaaS API gateway to secure Large Language Models from prompt injection
+attacks, role-play exploits, and context hijacking. Built a FastAPI-based security layer with threat scoring,
+MongoDB logging, RapidAPI integration, and cloud deployment to detect and block malicious prompts before
+reaching LLM systems.
+
+\vspace{5pt}
+\projecthead{AI News Agent}{\small\href{https://github.com/Sankarsh369}{GitHub}}
+Built an automated, resilient AI pipeline that curates AI news and delivers it to Telegram and Discord. Fetched
+real-time news via NewsAPI and used Google Gemini for high-quality summarization and punchy social media
+hooks, with exponential backoff for API reliability and GitHub Actions for 24/7 cloud-native automation.
+
+% ---------- Experience ----------
+\section{Experience}
+\projecthead{\textbf{Software Engineer Intern}}{Certificate | Nov 2025 -- Jan 2026}
+\noindent\textit{YugaYatra Retail (OPC) Private Ltd -- Internship}\hfill\textit{India (Hybrid)}\par
+\vspace{2pt}
+Identified and reported functional bugs on live sites through hands-on testing, and proposed UI/UX improvements
+including image, content, and minor frontend suggestions.
+
+% ---------- Education ----------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+  2027 (Expected) & Bachelor's Degree at VIT Bhopal University & (CGPA: 7.93/10) \\
+  2022 & Amaravati, State Board (12th) & (84.9\%) \\
+  2020 & Keshava Reddy School, State Board (10th) & (97.6\%) \\
+\end{tabularx}
+
+% ---------- Certifications ----------
+\section{Certifications}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  Advanced Software Engineering and AI Foundation -- MPOnline Limited (May 2026 -- Aug 2026) &
+  \href{https://github.com/Sankarsh369}{Link} \\
+\end{tabularx}
+
+\end{document}
